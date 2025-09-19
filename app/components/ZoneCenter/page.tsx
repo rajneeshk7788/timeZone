@@ -53,7 +53,6 @@ const CountryTimeZones: React.FC = () => {
         return () => clearInterval(interval);
     }, []);
 
-   
 
     return (
         <div className="min-h-screen w-full bg-gradient-to-br from-blue-50 via-purple-100 to-pink-50 py-10">
