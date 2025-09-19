@@ -53,13 +53,7 @@ const CountryTimeZones: React.FC = () => {
         return () => clearInterval(interval);
     }, []);
 
-    if (!currentTime) {
-        return (
-            <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-purple-100 to-pink-50">
-                <span className="text-2xl text-purple-700 font-bold">Loading times...</span>
-            </div>
-        );
-    }
+   
 
     return (
         <div className="min-h-screen w-full bg-gradient-to-br from-blue-50 via-purple-100 to-pink-50 py-10">

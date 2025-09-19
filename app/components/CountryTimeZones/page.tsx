@@ -1,6 +1,8 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import moment from "moment-timezone";
+import { LiaSpinnerSolid } from "react-icons/lia";
+
 
 const countriesTimeZones = [
     { country: "Afghanistan", zone: "Asia/Kabul" },
@@ -61,8 +63,9 @@ const CountryTimeZones: React.FC = () => {
 
    if (!currentTimes) {
         return (
-            <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-purple-100 to-pink-50">
-                <span className="text-2xl text-purple-700 font-bold">Loading times...</span>
+            <div className="min-h-screen w-full flex items-center justify-center bg-gradient-to-br from-blue-50 via-purple-100 to-pink-50">
+                {/* <span className="text-2xl w-full text-purple-700 font-bold">Loading times...</span> */}
+                <LiaSpinnerSolid size={40}/>
             </div>
         );
     }
